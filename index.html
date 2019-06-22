@@ -15,15 +15,37 @@
 
 
 <body>
-
+<canvas id="myCanvas" width="450" height="150" style="border:1px solid #d3d3d3;" onclick="window.open('tel:+381614243190'); ">
+Your browser does not support the HTML5 canvas tag.</canvas>
 <br>
-<table>
-    <tr onclick="window.open('tel:+381614243190'); ">
-     <td>Phone: 900 300 400</td>
-    </tr>
-   </table>
-    <script>
 
+    <script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(20, 100);
+ctx.lineTo(20, 20);
+ctx.lineTo(70, 100);
+ctx.lineTo(70,20);
+ctx.moveTo(90,20);
+ctx.lineTo(90,100);
+ctx.moveTo(110,20);
+ctx.lineTo(110,100);
+ctx.moveTo(160,100);
+ctx.lineTo(110,60);
+ctx.lineTo(160,20);
+ctx.moveTo(240,60);
+ctx.arc(200,60,40,0,2*Math.PI);
+ctx.moveTo(260,20);
+ctx.lineTo(260,100);
+ctx.lineTo(320,100);
+ctx.moveTo(340,100);
+ctx.lineTo(365,20);
+ctx.lineTo(390,100);
+ctx.moveTo(352,60);
+ctx.lineTo(378,60);
+ctx.strokeStyle = "green";
+ctx.stroke();
        
 
     </script>
